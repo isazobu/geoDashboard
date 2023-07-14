@@ -1,0 +1,156 @@
+{
+  "geo": [
+    {
+      "id": 456,
+      "name": "Folder 1",
+      "date": "2023-06-01",
+      "children":[
+        {
+          "id": "222223223333",
+          "name": "Polygon 1",
+          "isPolygon": true,
+          "parentId": "456",
+          "points": [
+            { "latitude": 40.7128, "longitude": -74.0060 },
+            { "latitude": 34.0522, "longitude": -118.2437 },
+            { "latitude": 41.8781, "longitude": -87.6298 }
+          ],
+          "type": "Type A",
+          "elevation": 100
+        },
+        {
+          "id": "233343214412312",
+          "name": "Polygon 2",
+          "isPolygon": true,
+          "parentId": "456",
+          "points": [
+            { "latitude": 51.5074, "longitude": -0.1278 },
+            { "latitude": 48.8566, "longitude": 2.3522 },
+            { "latitude": 55.7558, "longitude": 37.6176 },
+            { "latitude": 56.7558, "longitude": 51.6176 }
+          ],
+          "type": "Type B",
+          "elevation": 150
+        },
+        {
+          "id": "3",
+          "name": "Polygon 3",
+          "isPolygon": true,
+          "parentId": "456",
+          "points": [
+            { "latitude": 35.6895, "longitude": 139.6917 },
+            { "latitude": 40.7128, "longitude": -74.0060 },
+            { "latitude": 51.5074, "longitude": -0.1278 }
+          ],
+          "date": "2023-06-18",
+          "type": "Type C",
+          "elevation": 200
+        }
+     
+      ]
+      
+    },
+    {
+      "id": 333,
+      "name": "Folder 1",
+      
+      "children": [
+        {
+          "id": "22224",
+          "name": "Polygon 4",
+          "isPolygon": true,
+          "parentId": "333",
+          "points": [
+            { "latitude": 37.7749, "longitude": -122.4194 },
+            { "latitude": 34.0522, "longitude": -118.2437 },
+            { "latitude": 48.8566, "longitude": 2.3522 }
+          ],
+          "date": "2023-06-19",
+          "type": "Type D",
+          "elevation": 125
+        },
+        {
+          "id": "444225",
+          "name": "Polygon 5",
+          "isPolygon": true,
+          "parentId": "333",
+          "points": [
+            { "latitude": 52.5200, "longitude": 13.4050 },
+            { "latitude": 55.7558, "longitude": 37.6176 },
+            { "latitude": 35.6895, "longitude": 139.6917 }
+          ],
+          "date": "2023-06-20",
+          "type": "Type E",
+          "elevation": 180
+        }
+      ]
+    }
+  ],
+  
+  "weapons": [
+    {
+      "id": 1,
+      "name": "M270 MLRS",
+      "type": "Multiple Rocket Launcher",
+      "country": "United States",
+      "caliber": "227mm",
+      "weight": "24,950 kg",
+      "length": "7.6 m",
+      "range": "70 km"
+    },
+    {
+      "id": 2,
+      "name": "Apache AH-64",
+      "type": "Attack Helicopter",
+      "country": "United States",
+      "caliber": "30mm",
+      "weight": "5,165 kg",
+      "length": "17.7 m",
+      "range": "476 km"
+    },
+    {
+      "id": 3,
+      "name": "T-90",
+      "type": "Main Battle Tank",
+      "country": "Russia",
+      "caliber": "125mm",
+      "weight": "46,500 kg",
+      "length": "9.53 m",
+      "range": "4 km"
+    },
+    {
+      "id": 4,
+      "name": "Aircraft Carrier Nimitz Class",
+      "type": "Aircraft Carrier",
+      "country": "United States",
+      "caliber": "N/A",
+      "weight": "100,000 tons",
+      "length": "332.8 m",
+      "range": "Unlimited"
+    }
+  ],
+  "users": [
+    {
+      "id": 5,
+      "full_name": "Michael Wilson",
+      "username": "michaelwilson",
+      "tckNo": "99999999999",
+      "email": "michaelwilson@example.com",
+      "password": "mypass"
+    },
+    {
+      "username": "44444444344",
+      "email": "323",
+      "tckNo": "23",
+      "id": 6
+    },
+    {
+      "username": "fdsf",
+      "email": "fsdf",
+      "tckNo": "fsdfsd",
+      "password": "fsdasd",
+      "passWordConfirmation": "dasdasdsa",
+      "id": 7
+    }
+  ]
+}

@@ -37,7 +37,7 @@ const App = () => (
             name="geo"
             
         /> */}
-        {/* <Resource
+        <Resource
             name="users"
             {...users}
             recordRepresentation="name"
@@ -47,7 +47,7 @@ const App = () => (
             {...weapons}
             icon={RocketLaunchIcon}    
         />
-         */}
+        
 
         <CustomRoutes>
         {/* <Route path="/settings" element={<Counter />} /> */}

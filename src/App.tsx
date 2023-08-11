@@ -22,6 +22,8 @@ import GeoPolygonScreen from './features/geoPolygon/GeoPolygon';
 import PolyScreen from './screens/PolygonScreen';
 const dataProvider = jsonServerProvider('http://localhost:3001');
 import {CustomLayout} from './CustomLayout'
+import RadialMenu from './components/RadialMenu';
+import FanMenu from './components/FanMenu';
 const App = () => (
     <Provider store={store}>
 
@@ -54,6 +56,10 @@ const App = () => (
 
         <Route path="/geo" element={<GeoPolygonScreen />} />
 
+
+
+        <Route path='/radial-menu' element={<RadialMenu  />} />
+        <Route path='/fan-menu' element={<FanMenu />} />
         </CustomRoutes>
 
     </Admin>

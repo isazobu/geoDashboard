@@ -27,6 +27,12 @@ function FanMenu() {
   };
 
 
+
+
+  
+
+  const numOfMenuItem = 3;
+
   return (
     <div
       onContextMenu={(e) => {
@@ -37,9 +43,60 @@ function FanMenu() {
 
       style={{ width: "100vw", height: "100vh" }}
     >
+
+      {/* 90 Degree Menu */}
       <MenuProvider>
         {/* add your animation classes via `className`. See `src/stories/MenuCustomization.stories.tsx` */}
-        <Menu animationTimeout={1} centerX={window.innerWidth- 200} centerY={window.innerHeight-200} innerRadius={75} outerRadius={150} show={show}>
+        <Menu animationTimeout={1} centerX={window.innerWidth- 1700} centerY={window.innerHeight-100} innerRadius={75} outerRadius={150} show={show}>
+
+        {Array(numOfMenuItem).fill(<div>Element</div>).map((element, index) => (
+        <div key={index}>{element}</div>
+      ))}
+          <SubMenu
+            onDisplayClick={handleDisplayClick}
+            onItemClicked={handleSubMenuClick}
+            sectionView="Silahlar"
+            data="Silahlar"
+            displayPosition="bottom"
+          >
+            <div></div>
+            <div></div>
+            
+            <SubMenu
+              onDisplayClick={handleDisplayClick}
+              sectionView={<FlightIcon />}
+              onItemClicked={handleSubMenuClick}
+              data="Uçaklar"
+              displayPosition="bottom"
+            >
+              <div></div>
+              <MenuItem onItemClicked={handleItemClick} data="F-16 Uçağı">F-16</MenuItem>
+              <MenuItem onItemClicked={handleItemClick} data="F-35 Uçağı">F-35</MenuItem>
+              <MenuItem onItemClicked={handleItemClick} data="Lockheed Martin F-22 Raptor Uçağı">F-22</MenuItem>
+            </SubMenu>
+            <SubMenu
+              onDisplayClick={handleDisplayClick}
+              onItemClicked={handleSubMenuClick}
+              sectionView={<RocketLaunchIcon />}
+              data="Fuzeler"
+              displayPosition="bottom"
+            >
+              <div></div>
+              <MenuItem onItemClicked={handleItemClick} data="Tübitak G-40 (Füze)">G-40</MenuItem>
+              <MenuItem onItemClicked={handleItemClick} data="HİSAR (hava savunma sistemi)">HİSAR</MenuItem>
+              <MenuItem onItemClicked={handleItemClick} data="SOM Füzesi">SOM</MenuItem>
+            </SubMenu>
+          </SubMenu>
+         
+        
+      
+        </Menu>
+      </MenuProvider>
+
+      {/* 270 Degree Menu */}
+      <MenuProvider>
+        {/* add your animation classes via `className`. See `src/stories/MenuCustomization.stories.tsx` */}
+        <Menu animationTimeout={1} centerX={window.innerWidth- 200} centerY={window.innerHeight-100} innerRadius={75} outerRadius={150} show={show}>
           {/* Populate your menu here */}
           <div></div>
           <SubMenu

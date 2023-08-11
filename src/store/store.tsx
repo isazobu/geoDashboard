@@ -1,10 +1,12 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
 
 import geoPolygonReducer from '../features/geoPolygon/geoPolygonSlice'
+import radialMenuSlices from '../features/RadialMenu/radialMenuSlices'
 
 
 const rootReducer = combineReducers({
-  geoPolygon: geoPolygonReducer
+  geoPolygon: geoPolygonReducer,
+  radialMenu: radialMenuSlices
 })
 
 export const store = configureStore({
